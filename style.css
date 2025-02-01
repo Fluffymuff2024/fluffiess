@@ -1,0 +1,1794 @@
+@font-face {
+    font-family: 'fredoka';
+    src: url(image/Fredoka.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', serif;
+}
+.all-content{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://japaneast1-mediap.svc.ms/transform/thumbnail?provider=spo&farmid=196185&inputFormat=png&cs=MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDQ4MTcxMGE0fFNQTw&docid=https%3A%2F%2Fmy.microsoftpersonalcontent.com%2F_api%2Fv2.0%2Fdrives%2Fb!eA6DhGC24EKv-7IA0JwVeqPjCqdAvrVCkUha9qjeauI8yKbyHWHuQJKRVK_0bazC%2Fitems%2F0155527ELGWVMIHGGN7BEJSH6TYQGZY6BV%3Ftempauth%3Dv1e.eyJzaXRlaWQiOiI4NDgzMGU3OC1iNjYwLTQyZTAtYWZmYi1iMjAwZDA5YzE1N2EiLCJhcHBpZCI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDA0ODE3MTBhNCIsImF1ZCI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9teS5taWNyb3NvZnRwZXJzb25hbGNvbnRlbnQuY29tQDkxODgwNDBkLTZjNjctNGM1Yi1iMTEyLTM2YTMwNGI2NmRhZCIsImV4cCI6IjE3MzgzNDY0MDAifQ.XLSRh3fxhnupvv-mDhPYVtV-yQt7F13y022suGtpzHZqf5kDLQ0lcWs55JSm3zJAscPBPs3m2FYB0rBrE1ImCqCLvRQ35p_AS6sOJgc7gUE1_C5koPZuhk70NZHTV48DfrmO0ngux9FsIhbo--bitvna-64PAaOz-wFhkZ_KxjedPq-OWWbbVEYHhIXOP5lKWlZgx6UJpqLi3lp2E8qhGa1lDvEkFOGGVX4YTS0lcmKlE5vQsSwPK1z4rI_L5rvw2aIYjBzW99nhbLEOupOtThGBmTwzrxIyiWWxPfyovFW-nUbvfXYITbWZ1FSNAvNvzMYSrBWLCv88dGEd_-pOFN0anMrjlRZtbtou7S3vFJ8yOIMtdzIiyGjaL7oAPF-8.IhEPHIDMCMt192QIPZaINc62dZxbP5vUwbr0IzlXQys%26version%3DPublished&cb=63873708366&encodeFailures=1&width=640&height=359);
+}
+/* navbar */
+#navbar{
+    background-color: rgba(137, 89, 42, 0.984);
+    padding-left: 60px;
+    font-weight: normal;
+}
+#logo {
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+}
+#logo img {
+    margin-bottom: 8px;
+}
+.navbar-nav {
+    margin-left: 10px;
+}
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.nav-link:hover {
+    background-color: grey;
+    color: black;
+    border-radius: 5px;
+}
+.icons {
+    margin-left: 30px;
+}
+.icons img {
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icons img:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Input and button styles */
+input[type="search"] {
+    background-color: rgba(255, 255, 255, 0.984);
+    color: black;  /* Change to black text for better visibility */
+    border: 2px solid rgb(91, 57, 2);
+    padding: 5px 10px;
+    border-radius: 4px;
+    height: 40px;  /* Set a fixed height */
+    width: 200px;
+    display: inline-block;  /* Make it inline with the button */
+    vertical-align: middle;  /* Align the input with the button */
+}
+
+button[type="submit"] {
+    background-color: rgb(91, 57, 2);
+    color: white;
+    border: 2px solid rgb(91, 57, 2);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    height: 40px;  /* Set a fixed height */
+    width: 100px;
+    display: inline-block;  /* Make it inline with the input */
+    vertical-align: middle;  /* Align the button with the input */
+}
+
+button[type="submit"]:hover {
+    background-color: #8B4513;  /* Darken the brown on hover */
+}
+
+/* home section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: #fff;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 88.5vh;
+    background-image: linear-gradient(rgba(8, 4, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://japaneast1-mediap.svc.ms/transform/thumbnail?provider=spo&farmid=196185&inputFormat=JPG&cs=MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDQ4MTcxMGE0fFNQTw&docid=https%3A%2F%2Fmy.microsoftpersonalcontent.com%2F_api%2Fv2.0%2Fdrives%2Fb!eA6DhGC24EKv-7IA0JwVeqPjCqdAvrVCkUha9qjeauI8yKbyHWHuQJKRVK_0bazC%2Fitems%2F0155527EJGLEAAJZNKYBFZEJRXLYC32ZLK%3Ftempauth%3Dv1e.eyJzaXRlaWQiOiI4NDgzMGU3OC1iNjYwLTQyZTAtYWZmYi1iMjAwZDA5YzE1N2EiLCJhcHBpZCI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDA0ODE3MTBhNCIsImF1ZCI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9teS5taWNyb3NvZnRwZXJzb25hbGNvbnRlbnQuY29tQDkxODgwNDBkLTZjNjctNGM1Yi1iMTEyLTM2YTMwNGI2NmRhZCIsImV4cCI6IjE3MzgzNDY0MDAifQ.vir595O42_XVwc_Isbqy5CBtycIW2DZAw9L6xs51lB7HOuV4P90FmbRNDADoRSF6X-tUtI_l5UgDtYTXRDYP3Y_PLuAVDSt5b1iXDRb2CjX6LbWwP9t5nmxinNurszmcIozibtKS4Gr6dHvjSuK5HuYu825ShWNqLetcEDf10QQ_Ob4KkcCXHfx-I3c0TU5WLOln19Xr_I0_iymdMmcYd3FIIK767TORgGNqxq-UzkO1MXWUYCUlsbIvoPIQSL6BCVWxb0yZXY3JYvDSc1cJnbUSs3m67Jq8vgEZ4-L2fPmKrgIMpuJxyifghzeEMDfy2z3nHKGlyerNo-MsLjhWogkcVt3r3PDmbzoZH6e-GURp-g3XOxKgq2xC3pRcKbWZ.X8LqjhPRvTdnTIxFOz7lwaeQGMgTeUMM_LKugttjBVk%26version%3DPublished&cb=63873925541&encodeFailures=1&width=1920&height=926);
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.home .img {
+    flex: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end; /* Aligns the gif to the far right */
+}
+.home .content {
+    flex: 1 1 400px;
+}
+.content h3 {
+    color: white;
+    font-size: 8vw; /* Responsive font size based on the viewport width */
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(14, 14, 14);
+    margin-top: -300px;
+    max-width: 100%;
+    margin-right: 100px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 1200px) {
+    .content h3 {
+        font-size: 8vw; /* Adjust font size on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content h3 {
+        font-size: 12vw; /* Increase font size more on even smaller screens */
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .content h3 {
+        font-size: 16vw; /* Ensure it's large but not too large on mobile devices */
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .content h3 {
+        font-size: 20vw; /* Adjust for very small screens like phones */
+    }
+}
+.content h2 {
+    font-size: 65px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: normal;
+}
+
+.content h7 {
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-weight: normal;
+}
+.changecontent::after {
+    content: ' ';
+    color: rgba(137, 89, 42, 0.984);
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+    left: -50px;
+    margin-left: 10px;  /* Same font size as  */
+    text-shadow: 1px 1px 1px black;  /* Same text shadow as h2 */
+    position: relative;
+    text-align: left;
+    top: 0;  /* Adjust this to fine-tune the vertical alignment */
+      /* Adjust to ensure it stays aligned with h3 */
+}
+
+
+@keyframes changetext {
+   
+    0% { content: "Single Muffin"; }
+    20% { content: "Combo Muffin"; }
+    30% { content: "Sharing Muffin"; }
+}
+
+.content p {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.content .btn {
+    width: 110px;
+    height: 38px;
+    background-color: rgba(137, 89, 42, 0.984);
+    color: white;
+}
+
+.order-btn-link {
+    text-decoration: none;
+}
+
+.order-btn {
+    background-color: rgba(137, 89, 42, 0.9); /* Button background color */
+    color: white; /* Text color */
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: rgba(41, 25, 9, 0.9); /* Darker shade for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.order-btn:active {
+    transform: scale(0.98); /* Slight scale down when clicked */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 100%) {
+    .content h3 {
+        font-size: 100%;
+    }
+    .home {
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .home {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #logo {
+        font-size: 15px;
+    }
+    .content h2 {
+        font-size: 30px;
+    }
+    .content h3 {
+        font-size: 40px;
+    }
+}
+
+/* home section end */
+
+/* top cards */
+#box{
+    margin-top: 50px;
+}
+#box .card{
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#box .card:hover{
+    transform: translateY(-10px);
+}
+/* top cards end */
+
+/* Banner styles */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Reduced height of the banner */
+    margin-top: 50px;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+/* Video background styling */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Make the video span the full viewport width */
+    height: 100%; /* Adjust height to 100% of its container (80vh) */
+    object-fit: cover; /* Ensure the video covers the entire area */
+}
+
+/* Content styling (text) */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Add space from the left edge */
+    transform: translateY(-50%); /* Vertically center the text */
+    color: white; /* White color for text */
+    z-index: 1; /* Ensure text is above the video */
+}
+
+/* Text styles */
+.banner .content h3 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 280px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.banner .content h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+    text-align: left;
+}
+
+/* Button styles */
+#btnorder button {
+    width: 200px;
+    height: 40px;
+    letter-spacing: 2px;
+    background-color: rgba(137, 89, 42, 0.9);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+#btnorder button:hover {
+    background-color: rgba(137, 89, 42, 1);
+}
+
+/* Responsive design adjustments for smaller screens */
+@media screen and (max-width: 800px) {
+    .banner .content h3 {
+        font-size: 30px;
+    }
+
+    .banner .content h2 {
+        font-size: 40px;
+    }
+
+    #btnorder button {
+        width: 150px;
+    }
+}
+  
+/*Product*/
+.product-content h3 {
+    font-size: 100px;
+    color: #ffffff; /* Dark text color */
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/* Unified Styles for Product Cards and Fluffy Muffin Cards */
+
+/* General Card Styling */
+.card {
+    background-color: rgba(137, 89, 42, 0.984);
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures that all cards take up the full space */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-bottom: 2px solid #e1e1e1; /* Border under the image */
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Enlarges image on hover */
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card-body h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #53331b;
+    margin-top: 10px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.star i {
+    color: #605034;
+}
+
+.card-body h6 {
+    font-size: 1.25rem;
+    color: #47300d; /* Greenish color for price */
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.quantity-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-container input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+}
+
+.quantity-container button {
+    background-color: #775319; /* Warm color to match the muffin theme */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-container button:hover {
+    background-color: #2a1809; /* Slightly darker shade on hover */
+}
+
+/* Add to Cart Button Positioning */
+.add-to-cart-btn {
+    background-color: rgba(137, 89, 42, 0.984);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: auto;  /* Ensures button is pushed to the bottom of the card */
+    transition: background-color 0.3s ease;
+    width: 100%; /* Makes button fill the width of its container */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #572d0c;
+}
+
+/* Overlay Button Styling */
+.overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+    opacity: 1; /* Makes buttons visible on hover */
+}
+
+.overlay .btn {
+    background: rgb(119, 76, 32);
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.overlay .btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Shopping Cart Section */
+.shopping-cart-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+/* Action Box Styling */
+.action-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Total Price */
+#total-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Ensures buttons span full width on small screens */
+}
+
+/* Large Buttons */
+.btn-danger {
+    background-color: rgba(137, 89, 42, 0.984);
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: rgba(137, 89, 42, 0.984);
+}
+
+.btn-primary {
+    background-color: rgb(119, 76, 32);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color:rgba(137, 89, 42, 1);
+}
+
+.checkout-btn {
+    background-color: rgb(72, 48, 10);
+    color: white;
+    font-size: 18px;
+}
+
+.checkout-btn:hover {
+    background-color: rgba(108, 87, 67, 0.9);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .shopping-cart-section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #total-price {
+        font-size: 18px;
+    }
+
+    .action-box {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%; /* Ensures buttons span the full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    #total-price {
+        font-size: 16px;
+    }
+
+    .action-box {
+        padding: 10px;
+    }
+
+    .checkout-btn, .btn-danger, .btn-primary {
+        font-size: 14px; /* Adjust button text size for smaller screens */
+        padding: 10px 15px;
+    }
+}
+
+
+/* Section Title Styling */
+#product-cards h1, #fluffy-muffin-cards h1 {
+    font-size: 50px;
+    color: rgb(119, 76, 32); 
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid rgba(137, 89, 42, 0.9);
+}
+
+#product-cards .card-body h6,
+#fluffy-muffin-cards .card-body h6 {
+    font-size: 1.25rem;
+    color: #47300d;
+    font-weight: bold;
+}
+
+/* Product and Muffin Section Container */
+#product-cards .row, #fluffy-muffin-cards .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#product-cards .col-md-3, #fluffy-muffin-cards .col-md-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-basis: 22%;
+    margin-bottom: 30px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #product-cards .col-md-3, #fluffy-muffin-cards .col-md-3 {
+        flex-basis: 45%; /* Stack to 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #product-cards .col-md-3, #fluffy-muffin-cards .col-md-3 {
+        flex-basis: 100%; /* Stack all cards in a single column on very small screens */
+    }
+}
+
+/* Upper Section Styling (for Product Header and Muffin Section) */
+.upper {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.upper h3 {
+    color: #fbfbfb;
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: -100px;
+}
+
+.upper p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.upper .btn {
+    background-color: rgba(137, 89, 42, 0.984);
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: -10px;
+    width: auto;
+}
+
+.upper .btn:hover {
+    background-color: #572d0c;
+    transform: scale(1.05);
+}
+/*product end*/
+
+/* gallary */
+#gallary{
+    margin-top: 50px;
+}
+#gallary h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(137, 89, 42, 0.984);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(137, 89, 42, 0.984);
+}
+#gallary .card{
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+#gallary .overlay{
+    opacity: 0;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+#gallary .card:hover .overlay{
+    opacity: 5;
+    margin-top: 20%;
+    transition: 0.5s ease;
+}
+/* gallary */
+
+
+/* about */
+
+/* Mission Section Styles */
+#mission {
+    margin-top: 50px;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#mission h2 {
+    font-size: 2rem;
+    color: #ffffff; /* Dark color for the heading */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 1px;
+  
+    border-bottom: 2px solid white;
+}
+
+#mission .mission p {
+    font-size: 1.2rem;
+    color: #ffffff; /* Grey color for text */
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'uchen', 'san-serif';
+}
+
+
+/* General Styles for About Section */
+#about {
+    margin-top: 50px;
+    text-align: center; /* Center the content */
+    width: 100%; /* Make sure it’s responsive */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #762929;
+    margin-bottom: 30px;
+}
+
+.about-section {
+    padding: 0px 0;
+}
+
+.content-box {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(167, 95, 95, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    max-width: 100%; /* Make content box responsive */
+}
+
+/* Mission and Vision Specific Styles */
+.about-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #540707;
+    text-transform: uppercase;
+}
+
+.content-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #a82a2a;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Style for Mission and Vision Blocks */
+#mission, #vision {
+    margin-bottom: 40px;
+}
+
+.content-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .content-box {
+        padding: 15px;
+    }
+
+    #about .row {
+        flex-direction: column; /* Stack the items vertically */
+    }
+
+    #about .card {
+        width: 100%; /* Make the card width 100% for mobile */
+        margin-left: 0; /* Remove left margin */
+    }
+    #about .card img {
+        width: 100vw; /* Make the image cover the full viewport width */
+        height: 100vh; /* Make the height cover the full viewport height */
+        object-fit: cover; /* Ensure the image covers the area without distortion */
+        margin: 0; /* Remove any margins around the image */
+        position: relative; /* Make sure the image positions correctly */
+        left: 50%; /* Position the image to the center */
+        transform: translateX(-50%); /* Adjust image to fit the center horizontally */
+    }    
+    
+    }
+
+    #about h1 {
+        font-size: 1.8rem; /* Adjust header size */
+    }
+
+    #about p {
+        font-size: 14px; /* Make text smaller on mobile */
+    }
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Adjust further for smaller screens */
+    }
+
+    .content-box {
+        padding: 10px;
+    }
+
+    #about .card {
+        margin-left: 0; /* Ensure it’s fully responsive */
+    }
+
+    #about p {
+        font-size: 12px; /* Even smaller font size for smaller screens */
+    }
+}
+
+#about h1 {
+    font-weight: bold;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+#about p {
+    font-size: 15px;
+    color: #eae3e3;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about .row {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Align items in the center */
+    margin-top: 50px;
+}
+
+#about .col-md-6 {
+    padding: 0; /* Remove padding */
+    width: 100%; /* Ensure full width */
+}
+
+#about .card {
+    background-color: #c1794c;
+    box-shadow: 0px 0px 5px black;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height according to image aspect ratio */
+    margin-left: 0; /* Adjust for responsiveness */
+}
+
+#about .card img {
+    width: 100%; /* Adjust width to fit well */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers the area */
+    margin-bottom: 10px; /* Space between image and text */
+    margin-top: 10px;
+}
+
+#about .col-md-6 p {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 20px; /* Space between image and text */
+    text-align: center; /* Center the text */
+}
+
+#bt button {
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: #8c6953;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0; /* Center the button */
+}
+
+
+/* contact */
+/* contact */
+#contact {
+    margin-top: 100px;
+}
+
+/* Make sure the contact heading is centered and styled */
+#contact h1 {
+    font-size: 2.5rem;
+    color: rgba(137, 89, 42, 0.984) !important;  /* Use !important to override other styles */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(137, 89, 42, 0.984);
+}
+
+#contact input {
+    background-color: rgba(137, 89, 42, 0.984);
+    color: white; 
+    font-family: 'Uchen', sans-serif;
+}
+
+#contact textarea {
+    background-color: rgba(137, 89, 42, 0.984);
+    color: white; 
+    font-family: 'Uchen', 'san-serif';
+}
+
+#contact input::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+    font-family: 'Uchen', sans-serif;
+}
+
+#contact textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+    font-family: 'Uchen', sans-serif;
+}
+
+#messagebtn {
+    text-align: center;
+    font-family: 'Uchen', sans-serif;
+}
+
+#messagebtn button {
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 200xp;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#messagebtn button:hover {
+    background-color: rgba(137, 89, 42, 0.984);
+}
+
+/* General Styles for the contact section */
+.contact h5 {
+    font-size: 9vw !important; /* Slightly reduced font size */
+    font-weight: bold;
+    color: #ffffff; /* Tomato color */
+    text-align: center;
+    letter-spacing: 2px; /* Add some space between the letters */
+    line-height: 1.5;
+    margin-top: 0px;
+}
+
+/* Style for the Lorem Ipsum paragraph */
+.contact p:last-of-type {
+    font-size: 20px;
+    color: #f3f0f0; /* Darker gray for the "Lorem Ipsum" text */
+    text-align: center;
+    margin-top: -20px;
+    line-height: 1.8;
+}
+
+/* Style for the Order Now button */
+.contact .btn {
+    display: inline-block;
+    background-color: rgba(137, 89, 42, 1); /* Tomato color */
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    margin-top: 00px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center; /* Align text in the button */
+}
+
+/* Add media queries to adjust the font size for smaller screens */
+@media (max-width: 768px) {
+    .contact h5 {
+        font-size: 14vw !important; /* Reduced font size on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact h5 {
+        font-size: 18vw !important; /* Reduced font size on mobile devices */
+    }
+}
+
+
+/* General Styles for the contact section */
+.contact h5 {
+    font-size: 80px; /* Adjust size as needed */
+    font-weight: bold;
+    color: #ffffff; /* Tomato color */
+    text-align: center;
+    letter-spacing: 2px; /* Add some space between the letters */
+    line-height: 1.5;
+    margin-top: 0px;
+}
+/* Style for the Lorem Ipsum paragraph */
+.contact p:last-of-type {
+    font-size: 20px;
+    color: #f3f0f0; /* Darker gray for the "Lorem Ipsum" text */
+    text-align: center;
+    margin-top: -40px;
+    line-height: 1.8;
+}
+/* Style for the Order Now button */
+.contact .btn {
+    display: inline-block;
+    background-color: rgba(137, 89, 42, 1); /* Tomato color */
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    margin-top: 00px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center; /* Align text in the button */
+}
+
+/* Centering the button inside its container */
+.contact .container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Hover effect for the Order Now button */
+.contact .btn:hover {
+    background-color: #42240a; /* Darker tomato color on hover */
+    transform: translateY(-5px); /* Slightly move the button up on hover */
+}
+.appreciation {
+    display: inline-block;
+    background-color: rgba(137, 89, 42, 0.9); /* Tomato color */
+    color: white;
+    padding: 15px 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: auto;
+    height: auto;
+    border: 1px solid white;
+}
+.appreciation h3 {
+     font-family: 'Uchen', sans-serif;
+    font-size: 20px; /* Adjust size as needed */
+    font-weight: 700;
+    color: #ffffff; /* Dark green color for the "Dear Customer" text */
+     margin-bottom: 20px;
+     text-align: left;
+}
+.appreciation p {
+    font-family: 'Uchen', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff; /* Dark gray for better readability */
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.appreciation p:first-of-type {
+    margin-top: 10px; /* Adds a little space above the first paragraph */
+}
+
+/* Style for the "Thank You" paragraph */
+.appreciation p:last-of-type {
+    font-family: 'Uchen', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff; /* Green color to match the theme */
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold; /* Makes the "Thank You" text bold */
+    line-height: 1.8;
+}
+/*contact*/
+
+/* Styling for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+}
+
+footer .icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .icons a:hover {
+    color: #ff6347;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+    text-align: center;
+}
+
+/* Animation for fading */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+[data-aos="fade-up"] {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Adding spacing and animations to each section */
+#contact h1, #audio-section h1, footer h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2e8b57;
+    margin-bottom: 30px;
+}
+
+#audio-section h2 {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+}
+/* contact */
+
+/* footer */
+#footer {
+    width: 100%;    
+    background-color: rgba(137, 89, 42, 1);
+    box-shadow: 0px 0px 5px black;
+    margin-top: 100px;
+    padding-bottom: 20px; /* Add some bottom padding */
+}
+#footer h1 {
+    font-size: 50px;
+    color: white;
+    padding-top: 1px;
+    text-align: center;
+}
+#footer p {
+    color: white;
+    text-align: center;  /* Center the paragraph */
+    margin-top: -20px;
+}
+/* Align icons tightly */
+.icons {
+    display: flex;
+    justify-content: center;  /* Centers the icons horizontally */
+    margin-top: -10px;  /* Adds space above the icons */
+    gap: -900px;
+}
+
+.icons i {
+    background-color: white;
+    color: rgba(137, 89, 42, 0.984);
+    border-radius: 50%;
+    padding: 5px;  /* Reduced padding for smaller icons */
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    background-color: rgba(137, 89, 42, 0.984);
+    color: rgb(72, 48, 10);
+}
+
+.copyright {
+    color: rgb(250, 250, 250);
+    margin-top: 20px;
+    text-align: center;
+}
+.credite {
+    color: white;
+}
+/* footer */
+
+html{
+    scroll-behavior: smooth;
+}
+.arrow {
+    position: fixed;
+    background-color: rgba(137, 89, 42, 0.984);
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+.upper {
+    width: 100%;
+    height: 88.5vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./image/back.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+
+/* To ensure that the content inside .home is properly centered */
+.upper .content {
+    text-align: center;       /* Centers text horizontally */
+    max-width: 100%;         /* You can adjust this value as needed */
+    z-index: 0;               /* Ensure it stays on top of other elements */
+}
+
+/* Optional styles for the img */
+.upper .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper.img img {
+    max-width: 100%;          /* Ensure the image is responsive */
+    height: auto;
+}
+/* Styling for the carousel and card images */
+.carousel-item {
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px; /* Adjust image height */
+    object-fit: cover;  /* Ensures the image fills the space */
+    border-radius: 10px;
+}
+
+/* Card body styling */
+#creators {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#creators h1 {
+    font-size: 2.5rem;
+    color: #fefdfd;
+    margin-bottom: 40px;
+    border-bottom: 2px solid white;
+}
+.card-body {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+.creators-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+}
+
+.creator-card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 30px;
+    opacity: 0;
+    animation: slide-in 1s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    
+}
+
+/* Arrow styling */
+.slider-nav-arrows{
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slick-prev, .slick-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.slick-prev, .slick-next{
+    left: 10px;
+}
+
+.slick-next .slick-next{
+    right: 10px;
+}
+
+/* Hover effect for arrows */
+.slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slick-prev i, .slick-next i {
+    color: white;
+}
+
+/* Responsive Styling (optional) */
+@media (max-width: 768px) {
+    .creator-card {
+        width: 200px;
+    }
+
+    .slider-nav-arrows {
+        top: 70%;
+    }
+}
+
+/* Chatbot Modal Styles */
+.chatbot-modal {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+
+.chatbot-modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chatbot-header {
+    background-color: rgba(137, 89, 42, 0.984);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Uchen', sans-serif;
+}
+
+.chatbot-close {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chatbot-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.chatbot-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.chatbot-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Uchen', sans-serif;
+}
+
+.chatbot-input {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 0 0 10px 10px;
+    font-family: 'Uchen', sans-serif;
+}
+
+.chatbot-input input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-family: 'Uchen', sans-serif;
+}
+
+.chatbot-input button {
+    background-color: rgba(137, 89, 42, 0.984);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Uchen', sans-serif;
+}
+
+.chatbot-input button:hover {
+    background-color: rgba(137, 89, 42, 0.984);
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: rgba(137, 89, 42, 0.984);
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-family: 'Uchen', sans-serif;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: grey;
+    color: rgb(2, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-family: 'Uchen', sans-serif;
+}
+
+.chatbot-input button:hover {
+    background-color: rgba(137, 89, 42, 0.984);
+}
+
+/* Arrow Button to Open Chatbot */
+.chat {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: rgba(137, 89, 42, 0.984);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chat:hover {
+    background-color:rgba(137, 89, 42, 0.984);
+}
+.nice {
+background-color: rgba(137, 89, 42, 0.984);
+font
+}
+.nice .hi {
+    background-color: ;
+    font:5xp;
+}
+#audio-section {
+    background-color: #f9f9f9;  /* Light background for the section */
+    border: 2px solid #ddd; /* Border for the section */
+    border-radius: 8px; /* Rounded corners for the border */
+    padding: 1px;  /* Padding inside the section */
+    margin-top: 10px; /* Add space above the section */
+    text-align: center; /* Center-align the text */
+    width: 400px;
+    height: 150px;
+    margin-bottom: -90px;
+}
+#audio-section h1 {
+    font-size: 20px; /* Font size for the title */
+    color: #333; /* Dark color for the text */
+    font-family: 'Uchen', sans-serif; /* Font style for the title */
+    margin-bottom: 1px; /* Space between title and content */
+}
+#audio-section h2 {
+    font-size: 18px; /* Font size for the paragraph */
+    color: #090909; /* Slightly lighter color for the paragraph */
+    margin-top: 1px; /* Space between audio player and text */
+    font-family: 'Uchen', sans-serif; /* Consistent font style */
+}
+.audio-player audio {
+    width: 100%;
+    max-width: 400px;         /* Limit the audio player width */
+    margin: 10px auto;        /* Center the audio player */
+}
+
+/*cart*/
+body{
+	background: #ffffff;
+}
+.cart-container{
+	margin: 20px 0;
+	background-color: #fefeff;
+	padding: 60px 0;
+}
+.total-price{
+	padding-bottom: 15px;
+}
+.cart-item{
+	background-color: #fafafa;
+	border-radius: 10px;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+}
+.item-details{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cart-item img{
+	width: 115px;
+}
+.cart-item h5{
+    padding: 0 45px;
+}
+/*cart*/
+
+/*modal*/
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1050;
+}
+
+.modal-content {
+	background-color: #fff;
+	margin: 5% auto;
+	padding: 20px;
+	border-radius: 5px;
+	width: 70%;
+	max-width: 800px;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.inputBox {
+	margin: 10px 0;
+}
+
+.inputBox span {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.submit-btn {
+	padding: 10px 20px;
+	background-color: #9c6638;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	background-color: #32190b;
+}
+
+/*billing*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+/* Style for the "Your Cart" header */
+
+/* add to cart */
+.shopping-cart-section {
+    background-color: rgb(119, 76, 32); /* Light background color */
+    padding: 20px; /* Padding around the content */
+    border-radius: 8px; /* Slightly rounded corners */
+    margin: 20px auto; /* Centered container with margin */
+    max-width: 800px; /* Max width for better layout control */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Header styles */
+.shopping-cart-section h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f4f4f4; /* Dark text color */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the header */
+    border-bottom: 2px solid white;
+}
+
+/* Cart items container */
+#cart-items {
+    margin-bottom: 20px; /* Space after the cart items */
+    padding: 10px;
+    background-color: #b1a9a9; /* White background for cart items */
+    border-radius: 8px;
+    border: 1px solid #000000; /* Light border */
+    min-height: 150px; /* Ensure a minimum height */
+}
+
+/* Action box (buttons) styling */
+.action-box {
+    text-align: center; 
+    margin-top: 20px; /* Space above the buttons */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between the buttons */
+}
+
+/* Total price styling */
+.action-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e4ece6; 
+    margin-right: px;
+    font-family: 'Uchen', 'san-serif';
+    font-weight: bold;
+}
+
+/* Button styles */
+.action-box button {
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button text size */
+    border-radius: 5px; /* Rounded button corners */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    display: inline-block; /* Ensure buttons line up properly */
+    text-align: center; /* Center the button text */
+}
+
+/* Button hover effect */
+.action-box button:hover {
+    cursor: pointer;
+    opacity: 0.8; /* Slight fade effect when hovering */
+}
+
+.action-box .btn-danger {
+    background-color: rgba(70, 41, 10, 0.5); /* Red for clear cart button */
+    border: none;
+}
+
+.action-box .btn-danger:hover {
+    background-color: rgba(241, 238, 238, 0.5); /* Darker red on hover */
+}
+
+/* "Go back to Products" button */
+.action-box .btn-success {
+    background-color: rgba(14, 8, 2, 0.5); /* Blue for "Go back to Products" button */
+    border: 1px solid black;
+    text-align: center; /* Center the button text */
+}
+
+.action-box .btn-success:hover {
+    background-color: rgba(241, 238, 238, 0.5); /* Darker blue on hover */
+}
+
+/* "Checkout" button */
+.action-box .btn-primary {
+    background-color: rgba(70, 41, 10, 0.5); /* Green for checkout button */
+    border: none;
+}
+
+.action-box .btn-primary:hover {
+    background-color: rgb(155, 143, 123); /* Darker green on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    .shopping-cart-section {
+        padding: 15px; /* Less padding on small screens */
+    }
+
+    .shopping-cart-section h2 {
+        font-size: 24px; /* Slightly smaller title */
+    }
+
+    .action-box button {
+        width: 100%; /* Make buttons full width on small screens */
+        margin: 10px 0; /* Space between stacked buttons */
+    }
+}
+/*notification*/
+.notification {
+    background-color: rgb(158, 143, 128);  /* Green background */
+    color: rgb(82, 52, 10);  /* White text */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: opacity 0.3s ease;
+    z-index: 9999;  /* Ensure it appears on top */
+    position: relative;
+    margin-left: 250px;
+}
+.notification-with-arrow::after {
+    content: '';  
+    position: absolute;
+    right: 0px;  /* Position the arrow on the right side */
+    top: -10px;  /* Place it just above the notification box */
+    transform: rotate(180deg);  /* Rotate the arrow to point upwards */
+    border-left: 10px solid transparent;  /* Left side of the triangle */
+    border-right: 10px solid transparent;  /* Right side of the triangle */
+    border-top: 10px solid rgb(158, 143, 128);  /* The arrow color matches the notification background */
+}
